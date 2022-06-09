@@ -1,0 +1,37 @@
+{
+  "viewportWidth": 1366,
+  "viewportHeight": 768,
+  "experimentalStudio": true,
+  "defaultCommandTimeout": 20000,
+  "pageLoadTimeout": 40000,
+  "global_timeout": 30000,
+  "numTestsKeptInMemory": 50,
+  "ignoreTestFiles": "*.js",
+  "testFiles":"**/*.{feature,features}",
+  "screenshotsFolder": "cypress/reports/screenshots",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "video": true,
+  "modifyObstructiveCode": false,
+  "experimentalSourceRewriting": true,
+  "reporter":"cypress-multi-reporters",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "video": false,
+    "json": true,
+    "reporterEnabled":"cypress-mochawesome-reporter, mocha-junit-reporter",
+    "cypressMochawesomeReporterReporterOptions":{
+      "reporterDir": "cypress/reports",
+      "charts": true,
+      "reportPageTitle": "My tests",
+      "embeddedScreenshots":true,
+      "inlineAssets": true
+    },
+    "mochaJunitReporterReporterOptions":{
+      "mochaFile": "cypress/reports/junit/test-results-[hash].xml",
+      "toConsole": true
+    }
+  },
+  "chromeWebSecurity": false,
+  "retries": 0
+}
