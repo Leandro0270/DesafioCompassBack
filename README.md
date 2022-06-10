@@ -22,7 +22,9 @@ Para utilizar o Cypress, é necessário realizar as seguintes instalações:
 ### Instalação NodeJs
 
 **1**. Acessar a página <https://nodejs.org/en/> e baixar a ultima versão estavel
+
 **2**. Após realizar o download, os passos são iguais de qualquer instalador, prossiga apertando "next" até chegar na tela de "install" e "finish".
+
 **Voila!, NodeJs instalado com sucesso!**
 
 ### Instalação Visual Studio Code
